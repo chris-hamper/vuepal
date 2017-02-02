@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ title }}</h1>
     <ul>
-      <li><a href="a" target="_blank">Core Docs</a></li>
+      <li><a href="#" target="_blank">Articles</a></li>
     </ul>
   </div>
 </template>
@@ -20,19 +20,30 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  ul {
+  h1, ul, li {
     display: inline-block;
+  }
+
+  ul {
     list-style-type: none;
     padding: 0;
   }
 
-  h1, li {
-    display: inline-block;
-    margin: 0 10px;
+  h1 {
+    margin: 10px 20px 0;
+  }
+
+  li {
+    margin: 0 10px 0;
+    font-size: 120%;
   }
 
   a {
-    color: #42b983;
+    color: #328c61;
     text-decoration: none;
+  }
+
+  .hello {
+    background-color: #d8e4f0;
   }
 </style>
